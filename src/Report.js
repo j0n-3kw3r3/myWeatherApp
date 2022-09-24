@@ -3,12 +3,12 @@ import Typed from 'react-typed'
 
 function Report({data}) {
 
-    console.log(data)
+
     
   return (
       <div>
-        
-              
+        {
+            data &&  
                <div className=' w-[80%] bg-slate-400 dark:bg-slate-800 rounded mt-8 text-slate-800  flex mx-auto  p-2 justify-center dark:text-white  '>
         <div className=' w-[90%]  md:pb-1'>
         
@@ -39,8 +39,7 @@ function Report({data}) {
             <p className='p-2'> <span className=' font-semibold' >Feels Like:</span>  { data.current.feelslike}</p>
             <p className='p-2'> <span className=' font-semibold' >Wind: </span>{ data.current.wind_speed}</p>
             <p className='p-2'> <span className=' font-semibold' >Visibility: </span>{ data.current.feelslike}</p>
-            <p className='p-2'> <span className=' font-semibold' >Barometer:</span> { data.current.pressure
-}</p>
+            <p className='p-2'> <span className=' font-semibold' >Barometer:</span> { data.current.pressure}</p>
             <p className='p-2'> <span className=' font-semibold' >Humidity:</span> { data.current.humidity}</p>
             <p className='p-2'> <span className=' font-semibold' >Wind Degree:</span> { data.current.wind_degree}</p>
             <p className='p-2'> <span className=' font-semibold' >UV Index: :</span>{ data.current.uv_index}</p>
@@ -48,7 +47,7 @@ function Report({data}) {
         </div>
         </div>
            
-   
+   }
     </div>
   )
 }
