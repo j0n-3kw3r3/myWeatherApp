@@ -82,8 +82,8 @@ navigator.geolocation.getCurrentPosition((success) => {
 
       {/* weather report */}
 
-      {/* { data && <Report data={data} />
-      } */}
+      { data && <Report data={data} />
+      }
 
     </>
   )
